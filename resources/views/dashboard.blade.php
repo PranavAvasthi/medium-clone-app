@@ -1,5 +1,3 @@
-use Illuminate\Support\Str;
-
 <x-app-layout>
     <div class="py-4">
         <div class="max-w-3xl mx-auto sm:px-6 lg:px-8">
@@ -40,6 +38,8 @@ use Illuminate\Support\Str;
                 </div>
                 @endforeach
             </div>
+
+            {{ $posts->onEachSide(1)->links() }}
         </div>
     </div>
 </x-app-layout>
